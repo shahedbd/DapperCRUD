@@ -1,0 +1,4 @@
+﻿
+Dapper Nuget:
+Install-Package Dapper -Version 1.50.4
+
