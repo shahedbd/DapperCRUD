@@ -2,3 +2,7 @@
 Dapper Nuget:
 Install-Package Dapper -Version 1.50.4
 
+
+
+Git examples:
+https://github.com/RunningAroundIC/DapperCRUDWeb
