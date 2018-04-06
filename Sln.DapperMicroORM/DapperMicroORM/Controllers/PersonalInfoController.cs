@@ -18,8 +18,9 @@ namespace DapperMicroORM.Controllers
         // GET: PersonalInfo
         public ActionResult Index()
         {
-            List<PersonalInfo> PersonalInfoList = new List<PersonalInfo>();
-            PersonalInfoList = db.Query<PersonalInfo>("Select * From PersonalInfo").ToList();
+            //List<PersonalInfo> PersonalInfoList = new List<PersonalInfo>();
+            //PersonalInfoList = db.Query<PersonalInfo>("Select * From PersonalInfo").ToList();
+            List<PersonalInfo> PersonalInfoList = DapperORM.GetAll("PersonalInfo");
             return View(PersonalInfoList);
         }
 
