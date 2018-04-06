@@ -20,8 +20,8 @@ namespace DapperMicroORM.Controllers
         {
             //List<PersonalInfo> PersonalInfoList = new List<PersonalInfo>();
             //PersonalInfoList = db.Query<PersonalInfo>("Select * From PersonalInfo").ToList();
-            List<PersonalInfo> PersonalInfoList = DapperORM.GetAll("PersonalInfo");
-            return View(PersonalInfoList);
+             //List<PersonalInfo> PersonalInfoList = DapperORM.GetAll<PersonalInfo>("PersonalInfo");
+            return View(DapperORM.GetAll<PersonalInfo>("PersonalInfo"));
         }
 
         // GET: PersonalInfo/Details/5
